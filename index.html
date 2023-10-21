@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tuto git</title>
+</head>
+<body>
+    ingresa tu nombre <input type="text" id="nombre">
+    <button id="boton">Decir hola</button>
+    <h2 id="saludo"></h2>
+
+    <script>
+        const botton = document.getElementById("boton");
+        botton.addEventListener("click", () => {
+            const nombre = document.getElementById("nombre");
+            const saludoTxt = `Hola ${nombre.value}`;
+            const saludo = document.getElementById("saludo");
+            saludo.innerText = saludoTxt;
+        });
+    </script>
+</body>
+</html>
